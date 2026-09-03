@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CA SRP & Co, Chartered Accountants | Tax, Compliance, Audit & Certification Services | Bengaluru</title>
+<meta name="description" content="Chartered Accountant & Cost Management Accountant in Bengaluru offering GST, Direct Tax, Audit, Accounting and Certification services with 6+ years of experience.">
+<style>
+  :root{
+    --purple:#4a2072;
+    --purple-dark:#3a1a5c;
+    --purple-light:#6b3d99;
+    --teal:#159a9c;
+    --teal-dark:#0f7a7c;
+    --bg:#faf9fc;
+    --grey:#5a5a6a;
+    --light:#f3eefa;
+    --white:#ffffff;
+    --shadow:0 6px 24px rgba(74,32,114,0.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#2a2a35;line-height:1.65;background:var(--bg);}
+  h1,h2,h3,h4{line-height:1.25;}
+  a{text-decoration:none;color:inherit;}
+  .container{max-width:1150px;margin:0 auto;padding:0 22px;}
+  .accent{color:var(--teal);}
+
+  /* NAVBAR */
+  header{position:sticky;top:0;z-index:100;background:var(--white);box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1150px;margin:0 auto;}
+  .logo{display:flex;align-items:center;gap:12px;}
+  .logo-mark{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--purple),var(--teal));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px;letter-spacing:.5px;box-shadow:var(--shadow);}
+  .logo-text{font-weight:700;color:var(--purple);font-size:19px;}
+  .logo-text small{display:block;font-weight:500;color:var(--grey);font-size:11px;letter-spacing:2px;text-transform:uppercase;}
+  .nav-links{display:flex;gap:26px;align-items:center;}
+  .nav-links a{font-weight:600;color:#3a3a48;font-size:15px;transition:color .2s;}
+  .nav-links a:hover{color:var(--teal);}
+  .nav-cta{background:var(--teal);color:#fff!important;padding:9px 20px;border-radius:8px;transition:background .2s;}
+  .nav-cta:hover{background:var(--teal-dark);}
+  .menu-toggle{display:none;font-size:26px;color:var(--purple);background:none;border:none;cursor:pointer;}
+
+  /* HERO */
+  .hero{background:linear-gradient(135deg,var(--purple) 0%,var(--purple-dark) 60%,#2a1245 100%);color:#fff;padding:90px 0 100px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(21,154,156,0.35),transparent 70%);border-radius:50%;}
+  .hero-inner{position:relative;z-index:2;max-width:760px;}
+  .hero .badge{display:inline-block;background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.25);padding:7px 16px;border-radius:30px;font-size:13px;font-weight:600;letter-spacing:.5px;margin-bottom:22px;}
+  .hero-name{font-size:22px;font-weight:700;color:#5edcde;letter-spacing:1px;margin-bottom:10px;}
+  .hero h1{font-size:44px;font-weight:700;margin-bottom:18px;}
+  .hero h1 span{color:#5edcde;}
+  .hero p{font-size:18px;color:#e5dcf0;margin-bottom:32px;max-width:640px;}
+  .hero-btns{display:flex;gap:16px;flex-wrap:wrap;}
+  .btn{display:inline-block;padding:13px 30px;border-radius:9px;font-weight:600;font-size:16px;transition:all .2s;cursor:pointer;border:none;}
+  .btn-primary{background:var(--teal);color:#fff;}
+  .btn-primary:hover{background:var(--teal-dark);transform:translateY(-2px);}
+  .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);}
+  .btn-outline:hover{background:#fff;color:var(--purple);}
+  .hero-stats{display:flex;gap:40px;margin-top:48px;flex-wrap:wrap;}
+  .hero-stats .stat h3{font-size:32px;color:#5edcde;}
+  .hero-stats .stat p{font-size:14px;color:#d8cee8;margin:0;}
+
+  /* SECTION GENERAL */
+  section{padding:80px 0;}
+  .section-head{text-align:center;max-width:680px;margin:0 auto 54px;}
+  .section-head .tag{color:var(--teal);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:13px;}
+  .section-head h2{font-size:34px;color:var(--purple);margin:10px 0 14px;}
+  .section-head p{color:var(--grey);font-size:16px;}
+
+  /* ABOUT */
+  #about{background:var(--white);}
+  .about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:50px;align-items:center;}
+  .about-card{background:linear-gradient(135deg,var(--purple),var(--purple-light));color:#fff;border-radius:18px;padding:40px 34px;box-shadow:var(--shadow);}
+  .about-card .ac-avatar{width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:700;margin-bottom:20px;border:3px solid rgba(94,220,222,0.6);}
+  .about-card h3{font-size:24px;margin-bottom:4px;}
+  .about-card .role{color:#5edcde;font-weight:600;font-size:15px;margin-bottom:20px;}
+  .about-card ul{list-style:none;}
+  .about-card ul li{padding:7px 0;font-size:14.5px;color:#eee;border-bottom:1px solid rgba(255,255,255,0.12);}
+  .about-card ul li:last-child{border:none;}
+  .about-text h3{font-size:26px;color:var(--purple);margin-bottom:18px;}
+  .about-text p{color:var(--grey);margin-bottom:16px;font-size:16px;}
+  .about-text .points{list-style:none;margin-top:20px;}
+  .about-text .points li{padding:9px 0 9px 32px;position:relative;color:#3a3a48;font-size:15.5px;}
+  .about-text .points li::before{content:"\2714";position:absolute;left:0;color:var(--teal);font-weight:700;}
+
+  /* SERVICES */
+  #services{background:var(--bg);}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px;}
+  .service-card{background:var(--white);border-radius:16px;padding:32px 28px;box-shadow:var(--shadow);border-top:4px solid var(--teal);transition:transform .25s,box-shadow .25s;}
+  .service-card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(74,32,114,0.18);}
+  .service-card .num{width:48px;height:48px;border-radius:12px;background:var(--light);color:var(--purple);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;margin-bottom:18px;}
+  .service-card h3{color:var(--purple);font-size:20px;margin-bottom:12px;}
+  .service-card ul{list-style:none;}
+  .service-card ul li{padding:6px 0 6px 20px;position:relative;font-size:14.5px;color:var(--grey);}
+  .service-card ul li::before{content:"\2022";position:absolute;left:0;color:var(--teal);font-size:18px;line-height:1;}
+
+  /* WHY US */
+  #why{background:var(--white);}
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;}
+  .why-card{display:flex;gap:18px;padding:26px;border-radius:14px;background:var(--light);transition:background .2s;}
+  .why-card:hover{background:#ece3f8;}
+  .why-icon{flex:0 0 52px;width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;}
+  .why-card h4{color:var(--purple);font-size:17px;margin-bottom:6px;}
+  .why-card p{color:var(--grey);font-size:14.5px;margin:0;}
+
+  /* INDUSTRIES */
+  #industries{background:var(--bg);}
+  .ind-list{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
+  .ind-pill{background:var(--white);border:1.5px solid #e4d9f2;color:var(--purple);padding:12px 24px;border-radius:30px;font-weight:600;font-size:15px;box-shadow:0 3px 10px rgba(74,32,114,0.06);transition:all .2s;}
+  .ind-pill:hover{background:var(--purple);color:#fff;border-color:var(--purple);}
+
+  /* CONTACT / CTA */
+  #contact{background:linear-gradient(135deg,var(--purple-dark),var(--purple));color:#fff;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+  .contact-info h2{font-size:32px;margin-bottom:16px;}
+  .contact-info p{color:#e2d8f0;margin-bottom:30px;font-size:16px;}
+  .contact-item{display:flex;align-items:center;gap:16px;margin-bottom:20px;}
+  .contact-item .ci-icon{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;font-size:22px;flex:0 0 48px;}
+  .contact-item h4{font-size:14px;color:#b9a8d4;font-weight:600;margin-bottom:2px;}
+  .contact-item p{margin:0;font-size:17px;color:#fff;font-weight:600;}
+  .contact-card{background:var(--white);border-radius:18px;padding:36px;box-shadow:var(--shadow);}
+  .contact-card h3{color:var(--purple);font-size:22px;margin-bottom:6px;}
+  .contact-card>p{color:var(--grey);margin-bottom:22px;font-size:15px;}
+  .form-group{margin-bottom:16px;}
+  .form-group label{display:block;font-size:13px;font-weight:600;color:#444;margin-bottom:6px;}
+  .form-group input,.form-group textarea{width:100%;padding:12px 14px;border:1.5px solid #ddd;border-radius:9px;font-size:15px;font-family:inherit;transition:border .2s;}
+  .form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--teal);}
+  .contact-card .btn-primary{width:100%;}
+  .form-note{font-size:12.5px;color:#999;margin-top:12px;text-align:center;}
+
+  /* FOOTER */
+  footer{background:#241033;color:#c9bcd9;padding:44px 0 24px;text-align:center;}
+  .footer-logo{font-size:20px;font-weight:700;color:#fff;margin-bottom:8px;}
+  .footer-logo span{color:#5edcde;}
+  footer p{font-size:14px;margin-bottom:6px;}
+  .disclaimer{max-width:820px;margin:22px auto 0;font-size:12.5px;color:#8f7fa8;line-height:1.6;border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;}
+  .footer-bottom{margin-top:20px;font-size:13px;color:#7c6c95;}
+
+  /* RESPONSIVE */
+  @media(max-width:860px){
+    .nav-links{position:fixed;top:75px;right:0;background:#fff;flex-direction:column;width:230px;padding:20px;box-shadow:-4px 6px 20px rgba(0,0,0,0.1);border-radius:0 0 0 14px;transform:translateX(110%);transition:transform .3s;gap:18px;align-items:flex-start;}
+    .nav-links.open{transform:translateX(0);}
+    .menu-toggle{display:block;}
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:34px;}
+    .hero h1{font-size:32px;}
+    .section-head h2{font-size:27px;}
+    .hero-stats{gap:26px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <a href="#home" class="logo">
+      <div class="logo-mark">SRP</div>
+      <div class="logo-text">CA SRP &amp; Co<small>Chartered Accountants</small></div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#industries">Industries</a>
+      <a href="#contact" class="nav-cta">Contact Us</a>
+    </div>
+    <button class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">&#9776;</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home" style="padding-top:80px;">
+  <div class="container hero-inner">
+    <span class="badge">CA &nbsp;|&nbsp; CMA (AIR 39) &nbsp;|&nbsp; Bengaluru, Karnataka</span>
+    <div class="hero-name">CA Sreekanth Reddy</div>
+    <h1>Trusted <span>Tax, Audit &amp;</span> Compliance Partner for Your Business</h1>
+    <p>End-to-end GST, Direct Tax, Accounting, Audit and Certification services delivered with personalized attention, technical depth, and unwavering commitment to statutory deadlines.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      <a href="#services" class="btn btn-outline">Explore Services</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><h3>6+</h3><p>Years of Experience</p></div>
+      <div class="stat"><h3>Big 4</h3><p>Firm Experience</p></div>
+      <div class="stat"><h3>10+</h3><p>Service Areas</p></div>
+      <div class="stat"><h3>360&deg;</h3><p>Compliance Coverage</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">About</span>
+      <h2>Meet Your Chartered Accountant</h2>
+      <p>A qualified professional combining Big 4 rigour with the personal attention of a boutique practice.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="ac-avatar">SR</div>
+        <h3>CA Sreekanth Reddy</h3>
+        <div class="role">Chartered Accountant &amp; CMA (AIR 39)</div>
+        <ul>
+          <li>Chartered Accountant (CA)</li>
+          <li>Cost Management Accountant &ndash; All India Rank 39</li>
+          <li>6+ Years Post-Qualification Experience</li>
+          <li>3 Years in Big 4 &nbsp;&bull;&nbsp; 3 Years in Industry</li>
+          <li>Based in Bengaluru, Karnataka</li>
+        </ul>
+      </div>
+      <div class="about-text">
+        <h3>Depth of expertise. Clarity of advice.</h3>
+        <p>I am a Chartered Accountant and Cost Management Accountant (CMA &ndash; AIR 39) with extensive experience across indirect taxes (GST, Customs), direct taxation (Income Tax, Corporate Tax), accounting and auditing.</p>
+        <p>My practice is built on a hands-on approach&mdash;ensuring personalized attention, quality deliverables, and timely statutory compliance for every client.</p>
+        <ul class="points">
+          <li>End-to-end tax compliance, accounting, auditing &amp; advisory</li>
+          <li>Deep expertise in GST, Income Tax, Audit, MIS, RERA &amp; FEMA</li>
+          <li>Strong track record in litigation before appellate authorities</li>
+          <li>Regulatory certification and MCA services</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">What We Do</span>
+      <h2>Our Service Offerings</h2>
+      <p>Comprehensive professional services spanning routine compliance to complex litigation.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="num">01</div>
+        <h3>GST Services</h3>
+        <ul>
+          <li>Monthly &amp; annual returns (GSTR-1, 3B, 9, 9C)</li>
+          <li>ITC reconciliation with GSTR-2A/2B</li>
+          <li>Advisory on ITC, RCM &amp; place of supply</li>
+          <li>SCN &amp; ASMT-10 notice handling</li>
+          <li>Appeals before First Appellate Authority</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">02</div>
+        <h3>Direct Tax Services</h3>
+        <ul>
+          <li>Quarterly TDS returns (24Q, 26Q, 27Q, 27EQ)</li>
+          <li>SFT reporting &amp; compliance</li>
+          <li>Tax Audit u/s 44AB (Form 3CA/3CB &amp; 3CD)</li>
+          <li>Income tax computation &amp; ITR filing</li>
+          <li>Advisory on deductions &amp; exemptions</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">03</div>
+        <h3>Assessment &amp; Appeals</h3>
+        <ul>
+          <li>Scrutiny assessment u/s 143(3)</li>
+          <li>Rectification u/s 154 &amp; revision u/s 264</li>
+          <li>Appeals before CIT(A)</li>
+          <li>Statement of Facts &amp; Grounds of Appeal</li>
+          <li>Refund follow-up &amp; demand management</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">04</div>
+        <h3>Accounting &amp; Audit</h3>
+        <ul>
+          <li>Monthly accounting &amp; book-keeping in Tally ERP</li>
+          <li>MIS dashboards for financial insights</li>
+          <li>Statutory / Company Audit support</li>
+          <li>Financial statements as per IGAAP</li>
+          <li>Companies Act, 2013 compliance</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">05</div>
+        <h3>Certification Services</h3>
+        <ul>
+          <li>Form 15CA &amp; 15CB for foreign remittances</li>
+          <li>RERA CA certificates &amp; fund utilization</li>
+          <li>Bank end-use certificates</li>
+          <li>Net Worth, Turnover &amp; Solvency certificates</li>
+          <li>Working Capital &amp; Project Completion certificates</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">06</div>
+        <h3>Company Incorporation &amp; Lifecycle Compliance</h3>
+        <ul>
+          <li>Incorporation of Companies, LLPs &amp; Partnerships</li>
+          <li>Complete life-cycle ROC / MCA compliance</li>
+          <li>Annual filings, event-based &amp; secretarial compliance</li>
+          <li>Partnership deed drafting &amp; registration</li>
+          <li>Advisory on entity structuring &amp; conversions</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">07</div>
+        <h3>Financial Planning &amp; Budgeting</h3>
+        <ul>
+          <li>Annual budgets &amp; financial planning</li>
+          <li>Cash flow forecasting &amp; cost control</li>
+          <li>Working capital &amp; fund-flow management</li>
+          <li>Business performance review &amp; KPIs</li>
+          <li>Strategic advisory for growth planning</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">08</div>
+        <h3>Projections &amp; FS for Bank Loans</h3>
+        <ul>
+          <li>Projected financial statements &amp; CMA data</li>
+          <li>Financial projections for term loans &amp; CC/OD</li>
+          <li>Preparation of financial statements for funding</li>
+          <li>Project reports for bank &amp; NBFC finance</li>
+          <li>Ratio analysis &amp; DSCR computation</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">09</div>
+        <h3>Licenses &amp; Registrations</h3>
+        <ul>
+          <li>Labour Law &amp; Factories Act registrations</li>
+          <li>PF, PT &amp; ESI registration and compliance</li>
+          <li>Shops &amp; Establishment registration</li>
+          <li>TAN &amp; TDS registration and compliance</li>
+          <li>Partnership deed, GST &amp; other statutory licenses</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">10</div>
+        <h3>Startup Advisory &amp; Support</h3>
+        <ul>
+          <li>Startup India / DPIIT recognition &amp; registration</li>
+          <li>Government incentives, grants &amp; tax exemptions</li>
+          <li>Fund-raising guidance &amp; investor pitch support</li>
+          <li>Financial modelling, valuation &amp; due diligence</li>
+          <li>ESOP structuring &amp; end-to-end compliance handholding</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="num">11</div>
+        <h3>Advisory &amp; Regulatory Compliance</h3>
+        <ul>
+          <li>DTAA benefits &amp; cross-border tax advisory</li>
+          <li>FEMA &amp; regulatory compliance</li>
+          <li>RERA compliance for real estate entities</li>
+          <li>MCA &amp; corporate secretarial services</li>
+          <li>Proactive statutory deadline tracking</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Our Promise</span>
+      <h2>Why Choose Us</h2>
+      <p>What makes working with us different.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon">01</div><div><h4>Personalized Attention</h4><p>Direct engagement with a qualified CA ensuring quality and accountability at every step.</p></div></div>
+      <div class="why-card"><div class="why-icon">02</div><div><h4>Industry Expertise</h4><p>Deep understanding of sector-specific compliance and the evolving regulatory landscape.</p></div></div>
+      <div class="why-card"><div class="why-icon">03</div><div><h4>End-to-End Solutions</h4><p>Comprehensive coverage from routine compliance to complex litigation before appellate authorities.</p></div></div>
+      <div class="why-card"><div class="why-icon">04</div><div><h4>Timely Delivery</h4><p>Commitment to meeting all statutory deadlines with proactive reminders and progress tracking.</p></div></div>
+      <div class="why-card"><div class="why-icon">05</div><div><h4>Cost Effective</h4><p>Competitive and transparent fee structure without compromising on service quality.</p></div></div>
+      <div class="why-card"><div class="why-icon">06</div><div><h4>Technology Driven</h4><p>Leveraging modern tools for efficient compliance management and real-time reporting.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Sectors We Serve</span>
+      <h2>Industries of Expertise</h2>
+      <p>Experience spanning diverse sectors and regulatory environments.</p>
+    </div>
+    <div class="ind-list">
+      <span class="ind-pill">Startups</span>
+      <span class="ind-pill">Real Estate</span>
+      <span class="ind-pill">Information Technology (IT / ITES)</span>
+      <span class="ind-pill">E-Commerce (ECO)</span>
+      <span class="ind-pill">Fintech</span>
+      <span class="ind-pill">Manufacturing</span>
+      <span class="ind-pill">Trading</span>
+      <span class="ind-pill">Service Companies</span>
+      <span class="ind-pill">Infrastructure</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Looking forward to a long-term professional association. Reach out for a consultation on any tax, audit or compliance matter.</p>
+        <div class="contact-item">
+          <div class="ci-icon">&#9742;</div>
+          <div><h4>PHONE</h4><p>+91 89046 34543</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">&#9993;</div>
+          <div><h4>EMAIL</h4><p>CAsreekanthreddy.id@gmail.com</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">&#9873;</div>
+          <div><h4>OFFICE</h4><p style="font-size:15px;">No. 64, Riches Garden Main Road,<br>TC Palya Road, Ramamurthynagar,<br>Bangalore &ndash; 560016</p></div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <h3>Request a Consultation</h3>
+        <p>Fill in your details and we'll get back to you shortly.</p>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-group"><label>Full Name</label><input type="text" required placeholder="Your name"></div>
+          <div class="form-group"><label>Email</label><input type="email" required placeholder="you@example.com"></div>
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91"></div>
+          <div class="form-group"><label>How can we help?</label><textarea rows="3" placeholder="Briefly describe your requirement"></textarea></div>
+          <button type="submit" class="btn btn-primary">Send Enquiry</button>
+          <p class="form-note">Your information is kept strictly confidential.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">CA SRP &amp; <span>Co</span></div>
+    <p>Chartered Accountants</p>
+    <p>+91 89046 34543 &nbsp;&bull;&nbsp; CAsreekanthreddy.id@gmail.com</p>
+    <p>No. 64, Riches Garden Main Road, TC Palya Road, Ramamurthynagar, Bangalore &ndash; 560016</p>
+    <p class="disclaimer">
+This website of CA SRP &amp; Co, Chartered Accountants is intended to provide general information about the services offered and is not an advertisement or solicitation of work, in accordance with the guidelines of the Institute of Chartered Accountants of India (ICAI). The information contained herein is not intended to be a source of professional advice. No liability is accepted for actions taken based on this information. Please add the firm's Membership Number (M. No.) and Firm Registration Number (FRN) before publishing.
+    </p>
+    <div class="footer-bottom">&copy; 2026 CA SRP &amp; Co, Chartered Accountants. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  // Close mobile menu on link click
+  document.querySelectorAll('#navLinks a').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
+  });
+  // Simple form handler (no backend on GitHub Pages)
+  function handleSubmit(e){
+    e.preventDefault();
+    alert("Thank you! Your enquiry has been noted. Please also feel free to call +91 89046 34543.\n\n(Note: To receive these enquiries by email, connect a free form service like Formspree — see setup notes.)");
+    e.target.reset();
+  }
+</script>
+
+</body>
+</html>
